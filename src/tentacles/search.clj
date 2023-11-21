@@ -68,6 +68,12 @@
   [keywords & [query options]]
   (search "search/repositories" keywords query options))
 
+(defn search-commits
+  "Finds commits via various criteria. This method returns up to 100 results per page.
+  See the other search functions for further documentation."
+  [keywords & [query options]]
+  (search "search/commits" keywords query options))
+
 (defn search-code
   "Finds file contents via various criteria. This method returns up to 100
   results per page.
